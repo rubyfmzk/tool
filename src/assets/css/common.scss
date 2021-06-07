@@ -1,0 +1,159 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&family=Krub:wght@300&family=Noto+Serif+JP:wght@300&display=swap');
+
+html {
+  background: #fff;
+}
+
+body{
+  color: #71735b;
+  font-family: "游ゴシック", "Yu Gothic", YuGothic, sans-serif;
+  font-size: 15px;
+  letter-spacing: 0.05em;
+  line-height: 1.8em;
+  overflow-x: hidden;
+  width: 100%;
+}
+
+input, select{
+  font-family: 'Gotu', "游ゴシック", "Yu Gothic", YuGothic, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'EB Garamond', 'Noto Serif JP', serif;
+}
+
+h1{
+    font-size: 28px;
+    margin-bottom: 2em;
+    text-align: center;
+    line-height: 1.3em;
+}
+
+h2{
+  font-size: 22px;
+}
+
+h3{
+  font-size: 18px;
+}
+
+a{
+  color: #5d56bd;
+}
+
+a:hover, a:active, a:focus{
+  color: #7e77f1;
+  cursor: pointer;
+}
+
+header{
+    background: #f0f3f8;
+    position: relative;
+    padding: 7px 0;
+    margin: 0 0 -16px;
+    width: 100vw;
+}
+@media (min-width: 768px){
+  header {
+  }
+}
+header h1{
+    color: #fff;
+    font-size: 7vw;
+    word-break: break-all;
+    text-align: center;
+    margin: 4vw 7vw 4vw 0;
+    line-height: 1em;
+}
+header h1 span{
+    vertical-align: middle;
+    padding: 0 0 0 0vw;
+    margin-top: 0.5vw;
+    display: inline-block;
+}
+header h1 img.logo{
+    vertical-align: top;
+    width: 6.5vw;
+    margin: 0 1.3vw 0 1vw;
+}
+@media (min-width: 768px){
+  header h1{
+    margin-right: 30px;
+    line-height: 27px;
+  }
+  header h1 img.logo{
+    width: 33px;
+    margin: 0px 7px 0 5px;
+  }
+  header h1 span{
+    font-size: 33px;
+    margin: -7px 0 0;
+    padding: 0;
+  }
+}
+
+footer{
+    background: #f0f3f8;
+    z-index: 10;
+    position: relative;
+    padding: 0px;
+    border-top: solid 1px #c3c5ef;
+    text-align: center;
+    margin: 0 0 0;
+    width: 100vw;
+    font-size: 12px;
+    padding: 10px 0;
+}
+
+footer a{
+  text-decoration: none;
+}
+
+footer .sns{
+  margin: 4px 0 0;
+}
+
+footer .sns a{
+  margin: 0 6px;
+}
+
+footer p.link{
+    line-height: 1.3em;
+    margin: 0 0 1em;
+}
+
+footer .link a{
+  white-space: nowrap;
+}
+
+
+section{
+    padding: 0 20px;
+    position: relative;
+}
+@media (min-width: 768px){
+  section.narrow div{
+    width: 800px;
+    margin: auto;
+  }
+}
+
+select {
+  max-width: 100%;
+}
+
+@media (max-width: 767px){
+  .sp-none{
+    display: none;
+  }
+}
+@media (min-width: 768px){
+  .pc-none{
+    display: none;
+  }
+}
+
+.center{
+    text-align: center;
+}

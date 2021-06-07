@@ -1,28 +1,40 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <router-view></router-view>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+//import ComponentHeader from '@/components/ComponentHeader.vue'
+//import ComponentFooter from '@/components/ComponentFooter.vue'
+//import Mixin from '@/components/Common'
 
 export default {
-  name: 'App',
+//  mixins:[Mixin],
   components: {
-    HelloWorld
+//    ComponentHeader,
+//    ComponentFooter,
+  },
+  watch: {
+    '$route': function(to){
+      //スクロール位置
+      if(!to.hash){
+        window.scrollTo(0, 0)//トップへ
+      }
+      else{
+        this.toAnchor(to.hash)
+      }
+    },
+  },
+  methods:{
+    toAnchor: function(hash){
+      this.$scrollTo(hash)
+    },
   }
 }
 </script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+<style scoped lang="scss">
+@import url("assets/css/pure.css");
+@import url("assets/css/common.scss");
 </style>
