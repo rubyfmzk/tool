@@ -25,7 +25,7 @@ const routes = [
     component:() => import('@/views/Converter/Index.vue'),
     children: [
       {
-        path:  "JapanColor",
+        path:  "Image2Array",
         name: 'Converter_Image2Array',
         component:() => import('@/views/Converter/Image2Array.vue'),
       },

@@ -46,7 +46,7 @@ export default {
 
         const res = []
         for(let i=0; i<data.length; i+=4){
-          const val = (data[i] + data[i+1] + data[i+2] / 3).int()
+          const val = ((data[i] + data[i+1] + data[i+2]) / 3).int()
           res.push(val)
         }
 console.log(res)
@@ -58,4 +58,12 @@ console.log(res)
 </script>
 
 <style>
+#canvas{
+    min-width: 100px;
+}
+#code{
+    background: #eee;
+    word-break: break-word;
+    padding: 20px;
+}
 </style>
