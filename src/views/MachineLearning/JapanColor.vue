@@ -217,7 +217,7 @@ export default {
     init(){
       this.number = 0
       this.depth = 1
-      this.nodes = [10,10]
+      this.nodes = [3,3]
       this.learning_rate = 0.1
       this.activation_type = 'relu'
       //参考

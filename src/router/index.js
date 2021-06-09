@@ -19,7 +19,18 @@ const routes = [
         component:() => import('@/views/MachineLearning/JapanColor.vue'),
       },
     ]
-  }
+  },
+  {
+    path: '/Converter',
+    component:() => import('@/views/Converter/Index.vue'),
+    children: [
+      {
+        path:  "JapanColor",
+        name: 'Converter_Image2Array',
+        component:() => import('@/views/Converter/Image2Array.vue'),
+      },
+    ]
+  },
 ]
 
 const router = new VueRouter({
